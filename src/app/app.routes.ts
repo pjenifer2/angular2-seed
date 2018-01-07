@@ -6,8 +6,10 @@ import { RepoBrowserComponent } from './github/repo-browser/repo-browser.compone
 import { RepoListComponent } from './github/repo-list/repo-list.component';
 import { RepoDetailComponent } from './github/repo-detail/repo-detail.component';
 import { ContactComponent } from './contact/contact.component';
+import { ThirdPartyComponent } from './thirdparty/thirdparty.component'
 
 export const rootRouterConfig: Routes = [
+  { path: 'party', component: ThirdPartyComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },

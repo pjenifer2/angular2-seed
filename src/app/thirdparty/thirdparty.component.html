@@ -1,0 +1,40 @@
+<h2>Third Party Components</h2>
+
+<div class="container">
+<form>
+
+    <div class="form-group">
+            <timepicker name="mytime" [(ngModel)]="mytime"></timepicker>
+    </div>
+
+    
+    <div class="form-group" style="display: inline-block;">
+        <datepicker name="startDate" [(ngModel)]="startDate"
+            [showWeeks]="false"
+            [datepickerMode]="'year'">
+        </datepicker>
+    </div>
+
+    <div class="form-group">
+        <pre class="card card-block card-header">{{ onOffSwitch }}</pre>
+        <button type="button" class="btn btn-primary"
+            name="onOffSwitch"
+            [(ngModel)]="onOffSwitch"
+            btnCheckBox
+            btnCheckboxTrue="On"
+            btnCheckboxFalse="Off"
+            ngDefaultControl>
+            Single Toggle
+        </button>
+    </div>
+
+    {{ onOffSwitch }}
+
+
+
+</form>
+
+<h3>{{ startDate }}</h3>
+</div>
+
+    
